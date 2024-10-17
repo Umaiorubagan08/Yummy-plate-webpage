@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Connect </title>
+    <link rel="stylesheet" href="connect.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="connect-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="connect-left">
+            <div class="connect-left-title">
+                <h2> Let's stay connected </h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value="84cc34c8-fc82-44c1-8562-ab515e90174d">
+            <input type="text" name="name" placeholder="Your Name" class="connect-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="connect-inputs" required>
+            <textarea name="message" placeholder="Your message" class="connect-inputs" required></textarea>
+            <button type="submit"> Submit <i class='bx bx-right-arrow-alt'></i> </button>
+        </form>
+        <div class="connect-right">
+            <img src="./log-in.png" alt="log-in image">
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    
+</body>
+</html>

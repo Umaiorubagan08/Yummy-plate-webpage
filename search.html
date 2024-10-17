@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Your Favorite Dishes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="search.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+
+
+<body>
+    <section class="search_section">
+        <h2>Find Your Favorite Dishes</h2>
+        <p> Search through our menu to find the perfect meal </p>
+        <form class="search_form" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search for dishes..." required>
+            <button type="submit" title="Search your favorite dishes">Search</button>
+        </form>
+        <button type="submit" title="Click to Home interface" id="home_button"> <a href="./index.html"> <i
+                    class='bx bx-home-smile'></i> Home </a></button>
+    </section>
+
+    <section class="results_section" id="resultsSection"></section>
+
+
+
+
+    <!-- Bottom footer design -->
+    <div class="action-buttons" id="action-buttons">
+        <button id="sort-button" type="button" title="Sort by price here">Sort by Price</button>
+        <button id="reset-button" type="reset" title="Reset your orders">Reset Orders</button>
+    </div>
+
+    <div id="order-section" class="order-section">
+        <h3>Order Details</h3>
+        <form id="order-form">
+            <label for="quantity">Select Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            <button type="submit">Place Order</button>
+        </form>
+        <p id="order-confirmation">Your order has been placed. Enjoy your meal!</p>
+    </div>
+    </div>
+    </div>
+
+    <!--Js link-->
+    <script>
+        const dishes = [
+            { name: "DOSA", image: "./dosa_ai (1).webp" },
+            { name: "NOODLES", image: "./noodles_img.jpeg" },
+            { name: "BIRIYANI", image: "./biriyani_img.png" },
+            { name: "NAAN", image: "./Naan.jpeg" },
+            { name: "INDIAN THALI", image: "./indian thali.webp" },
+            { name: "CHAPATI", image: "./chapatti_img.jpeg" },
+            { name: "SAMOSA", image: "./samosa.jpeg" },
+            { name: "CHAI", image: "./chai.png" },
+            { name: "CHOCO PECAN", image: "./choco chips.webp" },
+            { name: "BEAVERTAILS", image: "./BeaverTails.webp" },
+            { name: "CHELSEA BUNS", image: "./CHELSEA BUN.webp" },
+            { name: "ADOBO", image: "./EGGPLANT ADOBO.jpeg" },
+
+            { name: "VADAI", image: "./vadai.webp" },
+            { name: "MILKSHAKE", image: "./milkshake.webp" },
+            { name: "ITALIAN PASTA", image: "./pasta.webp" },
+            { name: "VANILLA CAKE", image: "./cake 1.webp" },
+
+            { name: "CREAM CAKE", image: "./cake 2.webp" },
+            { name: "IDLY", image: "./idly.webp" },
+            { name: "VEG BURGER", image: "./burger.webp" },
+            { name: "COFFEE", image: "./coffee.webp" },
+
+        ];
+
+        // Function to display search results
+        const displayResults = (results) => {
+            const resultsSection = document.getElementById('resultsSection');
+            resultsSection.innerHTML = '';
+
+            if (results.length > 0) {
+                results.forEach(dish => {
+                    const dishCard = document.createElement('div');
+                    dishCard.classList.add('dish_card');
+                    dishCard.innerHTML = `
+                        <img src="${dish.image}" alt="${dish.name}" class="dish_image">
+                        <h3 class="dish_name">${dish.name}</h3>
+                    `;
+                    resultsSection.appendChild(dishCard);
+                });
+            } else {
+                resultsSection.innerHTML = '<p class="no_results">No dishes found. Try searching for something else!</p>';
+            }
+        };
+
+        document.getElementById('searchForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+            const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+            const filteredDishes = dishes.filter(dish => dish.name.toLowerCase().includes(searchTerm));
+            displayResults(filteredDishes);
+        });
+
+        // Display all dishes by default
+        displayResults(dishes);
+    </script>
+</body>
+
+</html>

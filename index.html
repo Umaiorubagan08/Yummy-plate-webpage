@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./food icon.png">
+
+    <title> YummyPlate </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Box Icons link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <a href="./index.html" class="logo" id="logo"> <i class='bx bxs-bowl-hot'></i> Yummy Plate </a>
+        <div class="navbar" id="navbar">
+            <div class="navbar__left" id="navbar__left">
+                <p><a href="./index.html" class="scroll-link"> Home </a></p>
+                <p><a href="./about.html" class="scroll-link"> About</a></p>
+                <p><a href="./connect.html" class="scroll-link"> Connect </a></p>
+                <p><a href="./search.html" class="scroll-link"> Menu </a></p>
+            </div>
+            <div class="profile">
+                <img src="./person_3.png" alt="Profile_image">
+                <span title="User"> Umaiorubagan </span>
+                <i class='bx bx-caret-down'></i>
+                <button type="submit" id="login" class="login"><i class='bx bx-log-in'></i> login </button>
+            </div>
+            <div class="shop_cart" id="shop_cart">
+                <button type="button" id="Cart"><i class='bx bxs-cart-alt'></i> Cart </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Title -->
+    <div class="title" id="title">
+        <h1> We are delicacy </h1>
+        <h3> Choose <span class="title_color"> delicacy </span> the best <span class="title_color"> restaurants. </span>
+            Yummy it! </h3>
+        <button id="try_now" type="submit"> <a href="./search.html" id="try_now"> TRY NOW <i id="arrow" class='bx bx-right-arrow-alt'></i> </a></button>
+    </div>
+
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <div class="numbertext"> </div>
+            <img src="./home1.jpeg" class="home1img">
+            <div class="text"> </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext"> </div>
+            <img src="./home2.jpg" class="home2img">
+            <div class="text"> </div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext"> </div>
+            <img src="./home3.jpeg" class="home3img">
+            <div class="text"> </div>
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <!-- link to javascript -->
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- link to js using scrollreveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scroll.js"></script>
+
+    <!-- main container -->
+    <div class="container">
+        <div class="section-one__title">
+            <h1 class="heading"> Order our best food options</h1>
+            <a class="section-one__contact" href="contact form.html"> <i class='bx bxs-hand-right bx-flashing'
+                    style='color:#fff'></i> For Online Booking </a>
+        </div>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img class="menu-item__image" src="./Dosa_img.jpg" alt="Dosa">
+                <h3 class="menu-item__heading">DOSA</h3>
+                <p class="menu-item__description">Dosa is a South Indian thin, crispy crepe made from fermented rice and
+                    lentil batter. It's light and golden-brown, typically served with coconut chutney, sambar, and
+                    tomato or onion chutney.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./noodles_img.jpeg" alt="Noodles">
+                <h3 class="menu-item__heading">NOODLES</h3>
+                <p class="menu-item__description">Noodles are long, thin strands made from unleavened dough. They can be
+                    boiled, stir-fried, or mixed with sauces and are used in a variety of dishes globally. Noodles are a
+                    staple food.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./biriyani_img.png" alt="Biryani">
+                <h3 class="menu-item__heading">BIRIYANI</h3>
+                <p class="menu-item__description">Biryani is a mixed rice dish, mainly popular in South Asia. It is made
+                    with rice, some type of meat, and spices. To cater to vegetarians, in some cases, it is prepared by
+                    substituting vegetables.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./Naan.jpeg" alt="Naan">
+                <h3 class="menu-item__heading">NAAN</h3>
+                <p class="menu-item__description">Naan is a leavened, oven-baked or tawa-fried flatbread. It is
+                    characterized by its light and slightly fluffy texture and golden-brown spots from the baking
+                    process and side dish.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./indian thali.webp" alt="Thali food">
+                <h3 class="menu-item__heading">INDIAN THALI</h3>
+                <p class="menu-item__description">A round platter used to serve food in South Asia, Southeast Asia, and
+                    the Caribbean. Thali is also used to refer to an Indian-style meal made up of a selection of various
+                    dishes served on a platter.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./chapatti_img.jpeg" alt="Chapati">
+                <h3 class="menu-item__heading">CHAPATI</h3>
+                <p class="menu-item__description">Chapati is an unleavened flatbread made of finely ground whole wheat
+                    flour mixed into dough with water and salt, then cooked on a tava, or flat skillet. This ancient
+                    style of bread.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./samosa.jpeg" alt="Samosas">
+                <h3 class="menu-item__heading">SAMOSA</h3>
+                <p class="menu-item__description">Arguably the most popular street food in India, samosas are fried or
+                    baked pastry pockets with a savory filling such as spiced potatoes, onions, and peas. Eat it in the
+                    evening time as a snacks.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./chai.png" alt="Chai">
+                <h3 class="menu-item__heading">CHAI</h3>
+                <p class="menu-item__description">Tea is an aromatic beverage prepared by pouring hot or boiling water
+                    over cured or fresh leaves of Camellia sinensis, an evergreen shrub native to East Asia. Chai is the
+                    most popular in india.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./choco chips.webp" alt="Choc Chip Pecan Pie">
+                <h3 class="menu-item__heading">CHOCO PECAN </h3>
+                <p class="menu-item__description">Choco Chip Pecan Pie blends nutty pecans with sweet chocolate chips in
+                    a buttery crust. It features a gooey mix of pecans, chocolate chips, and a sweet filling, most
+                    delicious dessert. </p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./BeaverTails.webp" alt="BEAVERTAILS">
+                <h3 class="menu-item__heading">BEAVERTAILS</h3>
+                <p class="menu-item__description">The BeaverTail is a fried dough pastry that is sold in a variety of
+                    flavours. Most flavours of BeaverTails are topped with sweet condiments and confections , such as
+                    chocolate hazelnut.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./CHELSEA BUN.webp" alt="CHELSEA BUNS">
+                <h3 class="menu-item__heading">CHELSEA BUNS</h3>
+                <p class="menu-item__description">The bun is made of a rich yeast dough flavoured with lemon peel,
+                    cinnamon or mixed spice. The dough is rolled out, spread with a mixture of currants, brown sugar and
+                    butter.</p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+
+            <div class="menu-item">
+                <img class="menu-item__image" src="./EGGPLANT ADOBO.jpeg" alt="EGGPLANT ADOBO">
+                <h3 class="menu-item__heading">EGGPLANT ADOBO</h3>
+                <p class="menu-item__description">This superpunchy, one-skillet vegetarian meal is inspired by chicken
+                    adobo, a beloved Filipino dish. Here, eggplant cooks in rich, tangy adobo sauce — a blend of soy
+                    sauce, pepper and bay leaf </p>
+                <button class="menu-item__button" title="Place your order">Order Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="search_section">
+        <h2>Find <span> Your </span> Favorite <span> Dishes </span></h2>
+        <p>Search through our menu to find the perfect meal</p><br>
+    </section>
+
+    <!-- menu design -->
+    <div class="subtitle">
+        <h3> What's on your mind? </h3>
+    </div>
+
+    <!-- menu container -->
+    <div class="order_images" id="order_images">
+        <div class="food-item dosa">
+            <img src="./dosa_ai (1).webp" alt="Dosa">
+            <p> Rs: 70 </p>
+        </div>
+
+        <div class="food-item momo">
+            <img src="./DALL·E 2024-10-15 20.13.01 - A delicious serving of momos arranged in the center of a circle-shaped frame. The momos are steamed, with a soft, doughy texture, filled with a savory.webp"
+                alt="Momo">
+            <p> Rs: 90 </p>
+        </div>
+
+        <div class="food-item burger">
+            <img src="./DALL·E 2024-10-15 20.12.22 - A delicious burger placed in the center of a circle-shaped frame. The burger has a juicy beef patty, fresh lettuce, tomato slices, melted cheese, pick.webp"
+                alt="Burger">
+            <p> Rs: 249 </p>
+        </div>
+
+        <div class="food-item spring_roll">
+            <img src="./Gemini_Generated_Image_fe10prfe10prfe10.jpeg" alt="Spring Roll">
+            <p> Rs: 135</p>
+        </div>
+
+        <div class="food-item potato_wings">
+            <img src="./Gemini_Generated_Image_syv21vsyv21vsyv2.jpeg" alt="Potato Wings">
+            <p> Rs: 199 </p>
+        </div>
+    </div>
+
+    <!-- food service container -->
+    <section class="section_container service_container" id="service">
+        <p class="section_subheader"> What We Serve </p>
+        <h2 class="section_header"> Your Favorite Food Delivery Partner </h2>
+
+        <div class="service_grid">
+            <div class="service_card">
+                <img src="./food-delivery.png" alt="service">
+                <h4> Easy to Order </h4>
+                <p> You only need a few steps in ordering food </p>
+            </div>
+
+            <div class="service_card">
+                <img src="./delivery.png" alt="service">
+                <h4> Fastest delivery </h4>
+                <p> Delivery that is always ontime even faster </p>
+            </div>
+
+            <div class="service_card">
+                <img src="./fast.png" alt="service">
+                <h4> Best Quality </h4>
+                <p> Not only fast for us quality is also number one </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Yummy plate banner style -->
+    <div class="banner" id="banner">
+        <img src="./Yummy plate.png" alt="banner">
+    </div>
+
+
+    <!-- Search_Section-->
+    <!--
+    <section class="search_section">
+        <h2>Find <span> Your </span> Favorite <span> Dishes </span></h2>
+        <p>Search through our menu to find the perfect meal</p><br>
+
+        <form id="search-form" class="search_form">
+            <input id="search-input" type="text" placeholder="Search for dishes..." required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+
+
+    <div class="action-buttons" id="action-buttons">
+        <button id="sort-button" type="button" title="Sort by price here">Sort by Price</button>
+        <button id="reset-button" type="reset" title="Reset your orders">Reset Orders</button>
+    </div>
+
+
+
+    <div id="order-section" class="order-section">
+        <h3>Order Details</h3>
+        <form id="order-form">
+            <label for="quantity">Select Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+            <button type="submit">Place Order</button>
+        </form>
+        <p id="order-confirmation">Your order has been placed. Enjoy your meal!</p>
+    </div>
+    </div>
+    </div>
+    -->
+
+    <!-- Scrollroll to Top Button -->
+    <button id="scrollToTopBtn" class="scrollToTop">↑</button>
+
+    <!-- javascript for scroll to up page -->
+    <script src="script.js"></script>
+
+    <!-- people reviews container -->
+    <div class="reviews-container">
+        <div class="client__contact review-card">
+            <h2 class="section__header"> What Our Customers Say About Us </h2>
+            <!--person 1 food review -->
+            <div class="review-content">
+                <p class="section__description">
+                    "Yummy Plate is simply outstanding! The variety and deliciousness of their meals are unparalleled,
+                    offering
+                    something for every palate. What sets yummy plate apart is their exceptional service. The delivery
+                    is
+                    impressively fast, ensuring your food arrives hot and fresh."
+                </p>
+
+                <div class="client__details">
+                    <img src="./person 1.jpg" alt="client">
+                    <div>
+                        <h4>John Wick</h4>
+                        <h5>Food Enthusiast</h5>
+                    </div>
+                </div>
+
+                <div class="client__rating">
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bx-star'></i></span>
+                    <span>4.8</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="client__contact review-card">
+            <div class="review-content">
+                <!--person 2 food review -->
+                <p class="section__description">
+                    "The quality of food at Yummy Plate is exceptional, and their customer service goes above and
+                    beyond. I
+                    appreciate how quickly they delivered my order and how fresh it was upon arrival."
+                </p>
+                <div class="client__details">
+                    <img src="./person 2.jpeg" alt="client">
+                    <div>
+                        <h4> Rina </h4>
+                        <h5>Food Blogger</h5>
+                    </div>
+                </div>
+
+                <div class="client__rating">
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bxs-star'></i></span>
+                    <span><i class='bx bx-star'></i></span>
+                    <span>4.7</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <section class="chief-section">
+        <div class="container">
+            <h2 class="section-title">Meet Our Chiefs</h2>
+            <div class="chief-cards">
+                <div class="chief-card">
+                    <img src="./chef 1.webp" alt="Chief 1" class="chief-image">
+                    <h3 class="chief-name">Chief RDJ </h3>
+                    <p class="chief-title">Executive Chef</p>
+                    <p class="chief-review">"RDJ culinary skills are exceptional, creating dishes that are both innovative and delicious."</p>
+                </div>
+                <div class="chief-card">
+                    <img src="./chef 2.webp" alt="Chief 2" class="chief-image">
+                    <h3 class="chief-name">Chief Peter </h3>
+                    <p class="chief-title">Pastry Chef</p>
+                    <p class="chief-review">"Peter desserts are a delightful treat, combining elegance with rich flavors."</p>
+                </div>
+                <div class="chief-card">
+                    <img src="./chef 3.webp" alt="Chief 3" class="chief-image">
+                    <h3 class="chief-name">Chief Harry </h3>
+                    <p class="chief-title">Sous Chef</p>
+                    <p class="chief-review">"Harry brings creativity and precision to every dish, making every meal a memorable experience."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- QR code for yummy plate -->
+
+    <div class="Qr_Code" id="Qr_Code">
+        <img src="./Yummy (1).png" alt="QR code app" title="Scan the QR code">
+
+    </div>
+
+    <!-- footer container -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Company Information Section -->
+            <div class="footer-section">
+                <h3>Yummy Limited</h3>
+                <p>123 Food Street, Dindigul, India</p>
+            </div>
+
+            <!-- Company Links Section -->
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Yummy One</a></li>
+                    <li><a href="#">Yummy Instamart</a></li>
+                    <li><a href="#">Yummy Genie</a></li>
+                    <li><a href="#">Minis</a></li>
+                </ul>
+            </div>
+
+            <!-- Legal Section -->
+            <div class="footer-section">
+                <h3> Legal </h3>
+                <ul>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Links Section -->
+            <div class="footer-section">
+                <h3> Connect with Us </h3>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-pinterest'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+
+            <!-- Download App Section -->
+            <div class="footer-section">
+                <h3>For better experience, download the Yummy app now</h3>
+                <div class="app-icons">
+                    <a href="https://play.google.com/store/games?hl=en&pli=1"><img src="./playstore.png"
+                            alt="Google Play Store" id="playstore"> Google Play </a>
+
+                    <a href="https://www.apple.com/in/app-store/"><img src="./app-store.png" alt="App Store"> App Store
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="footer-bottom">© 2024 Yummy Plate. We deliver to Mumbai, Delhi, Gurugram, Bengaluru, Chennai, Kolkata,
+            and over 500 cities.</p>
+    </footer>
+</body>
+</html>
